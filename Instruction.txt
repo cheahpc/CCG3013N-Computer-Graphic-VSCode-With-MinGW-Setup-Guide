@@ -9,7 +9,3 @@
 3) Copy .vscode configuration folder:
   TO: { your_project_folder }
   COPY: .vscode
-
-4) Add MinGW32 to PATH:
-  ADD: C:\MinGW32\bin
-  TO: PATH variable
