@@ -8,13 +8,15 @@
   TO: C:\
   Alternative: Execute "Run As Admin to Copy.bat" to copy 
 
-3) Add the following value to User Environment Variables:
+3) Add MinGW32 To User Environment Variables | Alternatively run the prepared script with admin to perform the copy automatically
   Value: C:\MinGW32\bin
   To: User Variables
   Step:
     1) In Start menu, search "Edit the System Environment Variables" and run the program as shown in figure 1.png.
     2) Follow the steps as shown figure 2.png, 3.png, and 4.png to complete adding the path variable.
   Why: To tell the system to look in the directory for imported library like "#include <windows.h>".
+
+  Alternative: Execute "Run As Admin to Add Path Variable.bat" to add the value to the user variables.
 
 4) Install C++ Extension Pack in VS Code
   Note: There are 2 approaches available, both leads to same outcome anyway.
