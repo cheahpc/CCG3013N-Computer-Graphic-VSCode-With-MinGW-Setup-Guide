@@ -8,11 +8,31 @@
   TO: C:\
   Alternative: Execute "Run As Admin to Copy.bat" to copy 
 
-3) Copy .vscode configuration folder:
-  COPY: .vscode
-  TO: { your_project_folder }
-  Note: The folder structure should look like "4) Sample Project" for every project consisting the codes in C/C++ and most importantly the ".vscode" configuration folder.
-  Why: The ".vscode" configuration folder consist "tasks.json" file that consist of custom settings that includes settings for compiler (pointing to "g++.exe" that is found in the folder copied in step 2), and specific arguments.
+3) Add the following value to User Environment Variables:
+  Value: C:\MinGW32\bin
+  To: User Variables
+  Step:
+    1) In Start menu, search "Edit the System Environment Variables" and run the program as shown in figure 1.png.
+    2) Follow the steps as shown figure 2.png, 3.png, and 4.png to complete adding the path variable.
+  Why: To tell the system to look in the directory for imported library like "#include <windows.h>".
 
-4) To run the sample project:
-  Open "4) Sample Project" folder in VSCode > Open main.cpp > Press "F5" key to compile and run.
+4) Install C++ Extension Pack in VS Code
+  Note: There are 2 approaches available, both leads to same outcome anyway.
+  Approach 1 - Step:
+    1) Open the link "Approach 1 - Link"
+    2) Click the green install button and follow through to install the extension pack in VS Code.
+
+  Approach 2 - Step:
+    1) Open VS codes
+    2) Go to Extensions tab as shown in "Approach 2 - Step"
+    3) Search for "C++ Extension Pack"
+    4) Install the extension pack. *make sure it is from Microsoft"
+
+5) Copy .VS Code configuration folder:
+  COPY: .VS Code
+  TO: { your_project_folder }
+  Note: The folder structure should look like "5) Sample Project" for every project consisting the codes in C/C++ and most importantly the ".VS Code" configuration folder.
+  Why: The ".VS Code" configuration folder consist "tasks.json" file that consist of custom settings that includes settings for compiler (pointing to "g++.exe" that is found in the folder copied in step 2), and specific arguments.
+
+6) Sample Project:
+  Open "6) Sample Project" folder in VS Code > Open main.cpp > Press "F5" key to compile and run.
