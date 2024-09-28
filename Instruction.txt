@@ -1,11 +1,18 @@
-1) Install dll library:
+1) Install dll library | Alternatively run the prepared script with admin to perform the copy automatically
   COPY: glut32.dll
   TO: C:\Windows\SysWOW64\
+  Alternative: Execute "Run As Admin to Copy.bat" to copy
 
-2) Install MinGW32 compiler:
+2) Install MinGW32 compiler | Alternatively run the prepared script with admin to perform the copy automatically
   COPY: MinGW32
   TO: C:\
+  Alternative: Execute "Run As Admin to Copy.bat" to copy 
 
 3) Copy .vscode configuration folder:
-  TO: { your_project_folder }
   COPY: .vscode
+  TO: { your_project_folder }
+  Note: The folder structure should look like "4) Sample Project" for every project consisting the codes in C/C++ and most importantly the ".vscode" configuration folder.
+  Why: The ".vscode" configuration folder consist "tasks.json" file that consist of custom settings that includes settings for compiler (pointing to "g++.exe" that is found in the folder copied in step 2), and specific arguments.
+
+4) To run the sample project:
+  Open "4) Sample Project" folder in VSCode > Open main.cpp > Press "F5" key to compile and run.
