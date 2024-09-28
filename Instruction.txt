@@ -38,4 +38,4 @@
 
 6) Compile and Run:
   Open "5) New Project" folder in VS Code > Open "main.cpp" > Press "F5" key to compile and run. > Select "C++ (GDB/LLDB)" when prompted.
-  Once the compiler is done compiling, a small window of rendered graphic will be shown *refer to figure "2 Expected Outcome.png"*
+  Once the compiler is done compiling, a small window of rendered graphic will be shown *refer to figure "2 Expected outcome.png"*
