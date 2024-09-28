@@ -1,0 +1,15 @@
+1) Install dll library:
+  COPY: glut32.dll
+  TO: C:\Windows\SysWOW64\
+
+2) Install MinGW32 compiler:
+  COPY: MinGW32
+  TO: C:\
+
+3) Copy .vscode configuration folder:
+  TO: { your_project_folder }
+  COPY: .vscode
+
+4) Add MinGW32 to PATH:
+  ADD: C:\MinGW32\bin
+  TO: PATH variable
