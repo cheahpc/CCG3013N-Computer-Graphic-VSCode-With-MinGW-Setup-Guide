@@ -28,11 +28,12 @@
     3) Search for "C++ Extension Pack"
     4) Install the extension pack. *make sure it is from Microsoft"
 
-5) Copy .VS Code configuration folder:
-  COPY: .VS Code
-  TO: { your_project_folder }
-  Note: The folder structure should look like "5) Sample Project" for every project consisting the codes in C/C++ and most importantly the ".VS Code" configuration folder.
-  Why: The ".VS Code" configuration folder consist "tasks.json" file that consist of custom settings that includes settings for compiler (pointing to "g++.exe" that is found in the folder copied in step 2), and specific arguments.
+5) New Project:
+  COPY Folder: .vscode
+  TO: <your_project_folder>
+  Note: The folder structure should look like this folder for every project. It consisting the codes in C/C++ and most importantly the ".vscode" configuration folder.
+  Why: The ".vscode" configuration folder consist "tasks.json" file that consist of custom settings that includes settings for compiler (pointing to "g++.exe" that is found in the folder copied in step 2), and specific arguments.
 
-6) Sample Project:
-  Open "6) Sample Project" folder in VS Code > Open main.cpp > Press "F5" key to compile and run.
+6) Compile and Run:
+  Open "5) New Project" folder in VS Code > Open "main.cpp" > Press "F5" key to compile and run. > Select "C++ (GDB/LLDB)" when prompted.
+  Once the compiler is done compiling, a small window of rendered graphic will be shown *refer to figure "2 Expected Outcome.png"*
